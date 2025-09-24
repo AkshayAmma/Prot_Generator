@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PORTFOLIO GENERATOR</h1>
+  <form id="portfolioForm">
+     
+   
+    <label>Full Name: <input type="text" id="name" required /></label>
+    <label>About Me: <textarea id="aboutText" required></textarea></label>
+
+    
+    <h3>Enter Roles: </h3>
+    <label>Add Roles:
+      <input type="text" id="phraseInput" />
+    </label>
+    <button type="button" class="btn" id="addPhraseBtn">Add Role</button>
+    <div class="list" id="phrasesList"></div>
+
+    
+    <h3>Skills: </h3>
+    <label>Add Skill:
+      <input type="text" id="skillInput" />
+    </label>
+    <button type="button" class="btn" id="addSkillBtn">Add Skill</button>
+    <div class="list" id="skillsList"></div>
+
+    
+    <h3>Projects: </h3>
+    <div id="projectFields">
+      <label>Project Name: <input type="text" id="projName" /></label>
+      <label>Project Description: <textarea id="projDesc"></textarea></label>
+      <label>Project Link: <input type="text" id="projLink" /></label>
+      <button type="button" class="btn" id="addProjectBtn">Add Project</button>
+      <button type="button" class="btn" id="newProjectBtn">Add New Project</button>
+    </div>
+    <div class="list" id="projectsList"></div>
+
+  
+    <h3>Contact Info: </h3>
+    <label>Email: <input type="email" id="email" /></label>
+    <label>Phone: <input type="text" id="phone" /></label>
+    <label>LinkedIn: <input type="text" id="linkedin" /></label>
+    <label>Upload Photo: <input type="file" id="photo" accept="image/*" /></label>
+
+    
+    <button type="submit" class="btn">Generate Portfolio</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

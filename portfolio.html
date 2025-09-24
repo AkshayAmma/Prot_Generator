@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+ <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Your Name</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    <button class="dark-mode-toggle" id="darkModeToggle"><i class="fas fa-moon"></i></button>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm <span class="name">Your Name</span></h1>
+    <p><span id="typed-text"></span></p>
+    <a href="#projects" class="btn-primary">View Projects</a>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="photo.webp" alt="Portrait" id="userPhoto" />
+      <p id="aboutPara"></p>
+    </div>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <ul class="skills-list" id="skillsList"></ul>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p>Email: <a href="#" id="userEmail"></a></p>
+    <p id="userPhone"></p>
+    <p>LinkedIn: <a href="#" id="userLinkedin" target="_blank"></a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <span id="footerName">Your Name</span>. All rights reserved.</p>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
